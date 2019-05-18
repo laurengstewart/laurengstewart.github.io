@@ -62,6 +62,6 @@ var advanceGame = function() {
 var changeDirection = function(direction) {
   snake[0].direction = direction;
 }
-var snake = [{ top: 0, left: 0, direction: "down" }];
+var snake = [{ top: 1, left: 0, direction: "down" }, { top: 0, left: 0, direction: "down" }];
 CHUNK.executeNTimesPerSecond(advanceGame, 8);
 CHUNK.onArrowKey(changeDirection);
